@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('template_back.layout');
-});
+// Route::get('/', function () {
+//     return view('template_back.layout');
+// });
+
+Route::get('/',[LoginController::class,'login'])->name('login');
 //Route Baru//
 Route::resource('buku', BukuController::class);
