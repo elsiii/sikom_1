@@ -1,14 +1,14 @@
 @extends('template_back.layout')
-
+@section('title','Tambah Data Buku')
 @section('content')
       <!-- breadcrumb -->
 				<div class="breadcrumb-header justify-content-between">
 					<div>
-						<h4 class="content-title mb-2">Hi, welcome back!</h4>
+						<h4 class="content-title mb-2">Input Data Buku</h4>
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a   href="javascript:void(0);">Tables</a></li>
-								<li class="breadcrumb-item active" aria-current="page"> Basic Tables</li>
+								<li class="breadcrumb-item active" aria-current="page">Basic/Tables</li>
 							</ol>
 						</nav>
 					</div>

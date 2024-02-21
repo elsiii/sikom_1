@@ -1,17 +1,17 @@
 <div class="sticky">
     <aside class="app-sidebar sidebar-scroll">
         <div class="main-sidebar-header active">
-            <a class="desktop-logo logo-light active" href="index.html"><img src="{{ asset('assets') }}/img/brand/logo.png" class="main-logo" alt="logo"></a>
-            <a class="desktop-logo logo-dark active" href="index.html"><img src="{{ asset('assets') }}/img/brand/logo-white.png" class="main-logo" alt="logo"></a>
-            <a class="logo-icon mobile-logo icon-light active" href="index.html"><img src="{{ asset('assets') }}/img/brand/favicon.png" alt="logo"></a>
-            <a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="{{ asset('assets') }}/img/brand/favicon-white.png" alt="logo"></a>
+            <a class="desktop-logo logo-light active" href="index.html"><img src="{{ asset('assets') }}/img/brand/Logo1.png" class="main-Logo1" alt="logo"></a>
+            <a class="desktop-logo logo-dark active" href="index.html"><img src="{{ asset('assets') }}/img/brand/logo-white.png" class="main-Logo1" alt="logo"></a>
+            <a class="logo-icon mobile-logo icon-light active" href="index.html"><img src="{{ asset('assets') }}/img/brand/favicon.png" alt=" Logo1"></a>
+            <a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="{{ asset('assets') }}/img/brand/favicon-white.png" alt=" logo1"></a>
         </div>
         <div class="main-sidemenu">
             <div class="main-sidebar-loggedin">
                 <div class="app-sidebar__user">
                     <div class="dropdown user-pro-body text-center">
                         <div class="user-pic">
-                            <img src="{{ asset('assets') }}/img/faces/6.jpg" alt="user-img" class="rounded-circle mCS_img_loaded">
+                            <img src="{{ asset('assets') }}/img/faces/elsi.jpg" alt="" class="rounded-circle mCS_img_loaded">
                         </div>
                         <div class="user-info">
                             <h6 class=" mb-0 text-dark">Elsi Nurhidayah</h6>

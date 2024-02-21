@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\LoginController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +21,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/',[LoginController::class,'login'])->name('login');
+Route::get('/logout',[LoginController::class,'logout'])->name('logout');
+Route::post('/auth',[LoginController::class,'auth'])->name('auth');
+
 //Route Baru//
-Route::resource('buku', BukuController::class);
+Route::resource('buku', BukuController::class)->middleware('auth');
+Route::get('/export_pdf_buku',[BukuController::class,'export_pdf'])->name('export_pdf_buku');
+Route::get('/export_excel_buku',[BukuController::class,'export_excel'])->name('export_excel_buku');
+Route::post('/import_excel_buku',[BukuController::class,'import_excel'])->name('import_excel_buku');

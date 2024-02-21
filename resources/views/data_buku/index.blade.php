@@ -1,10 +1,10 @@
 @extends('template_back.layout')
-
+@section('title','DataBuku')
 @section('content')
       <!-- breadcrumb -->
 				<div class="breadcrumb-header justify-content-between">
 					<div>
-						<h4 class="content-title mb-2">Hi, welcome back!</h4>
+						<h4 class="content-title mb-2">Hallo, Selamat Datang</h4>
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a   href="javascript:void(0);">Tables</a></li>
@@ -20,8 +20,12 @@
 					<div class="col-xl-12">
 						<div class="card">
 							<div class="card-header pb-0">
-								<div class="d-flex justify-content-between">
+								<div class="d-flex my-auto btn-list justify-content-end">
 									 <a href="{{ route('buku.create') }}"class="btn btn-primary">Tambah Data</a>
+									 <a href="{{ route('export_excel_buku') }}"class="btn btn-success">Export Excel</a>
+									 <a href="{{ route('export_pdf_buku') }}"class="btn btn-danger">Export PDF</a>
+									 <a class="modal-effect btn btn-dark" data-bs-effect="effect-rotate-bottom" data-bs-toggle="modal" href="#modaldemo8">Import Excel</a>
+									
 								</div>
 								@include('_component.pesan')
 							</div>
@@ -63,5 +67,6 @@
 					</div>
                 </div>
 					<!--/div-->
-               
+            
+					@include('data_buku.modal_import')
 @endsection
